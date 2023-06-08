@@ -1,589 +1,571 @@
-
-Funcion ejercicio_1
-	Definir a,b,c,resultado como reales;
+Funcion vid_12_suma_ej_1()
+	Definir resultado,num1,num2 Como Entero;
 	
-	Escribir " Digite el valor de A: ";
-	leer a; 
-	Escribir " Digite el valor de B: ";
-	leer b;
-	Escribir " Digite el valor de C: ";
-	leer c;
-	
-	resultado <- (-b + rc(b^2 - 4*a*c))/(2*a);  
-	
+	Escribir "Dijite un numero: ";
+	leer num1;
+	Escribir "Dijites otro numero: ";
+	leer num2;
+	resultado=num1 + num2;
 	Escribir "El resultado es: ",resultado;
 FinFuncion
 
-
-
-funcion ejercicio_2
-	Definir a, b como reales;
-	Definir resultado como logico;
-	
-	Escribir "Digite el valor de A ";
-	leer a;
-	Escribir "Digite el valor de B  "; 
-	leer b;
-	
-	resultado <- ((3+5*8)<3 y ((-6/3*4)+2<2)) o (a>b);
-	Escribir "El resultado es ",resultado;
+Funcion vid_9_operadores_racionales_ej_2()
+	Definir resultado Como Logico;
+	Definir a,b,c Como Entero;
+	Escribir "Dijite el valor de a: ";
+	Leer a;
+	Escribir "Dijite el valor de b: ";
+	Leer b;
+	Escribir "Dijite el valor de c: ";
+	Leer c;
+	resultado=a+b>=c;
+	Escribir "el resultado es: ", resultado;
 FinFuncion
 
-
-
-Funcion ejercicio_3
-	Definir a,b, aux como reales;
-	
-	Escribir " ingrese valor de A "; // A tiene como valor 30
-	leer a;
-	Escribir "ingrese valor de B "; // B tiene como valor 15
-	leer b;
-	
-	aux <- a;
-	a <-b;
-	b <- aux;
-	
-	Escribir "El nuevo valor de A es ",a;
-	Escribir "El nuevo valor de B es ",b;
+Funcion vid_14_operadoes_logicos_ej_3() 
+	Definir resultado Como Logico;
+	Definir a,b,c Como Entero;
+	Escribir "Dijite el valor de a: ";
+	Leer a;
+	Escribir "Dijite el valor de b: ";
+	Leer b;
+	Escribir "Dijite el valor de c: ";
+	Leer c;
+	resultado= ((a<b))y(b<c);
+	Escribir "el resultado es: ", resultado;
 FinFuncion
 
+Funcion vid_16_operadores_aritmeticos_ej_4()
+	definir a,b,c,resultado como reales;
+	Escribir "Dijite el valor de A: ";
+	Leer a;
+	Escribir "Dijite el valor de B: ";
+	Leer b;
+	Escribir "Dijite el valor de C: ";
+	Leer c;
+	resultado=(-b+rc(b^2-4*a*c))/(2*a);
+	Escribir "el resultado es: ",resultado;
+FinFuncion 
 
-
-Funcion ejercicio_4
-	Definir horas, minutos, seg  como enteros;
-	Definir horas_seg, minutos_seg, total_seg como enteros;
+Funcion vid_17_operanes_ej_5()
+	Definir a,b Como Real;
+	Definir resultado Como Logico;
 	
-	Escribir "Digite numero de horas: ";
+	Escribir "Dijite el valor de a: ";
+	Leer a;
+	Escribir "Dijite el valor de b: ";
+	Leer b;
+	resultado=((3+5*8)<3 y ((-6/3*4)+2<2)) o (a>b);
+	
+	Escribir "el resultado es: ", resultado;
+FinFuncion
+
+Funcion vid_18_intercambio_de_valores_ej_6()
+	Definir a,b,aux Como Entero;
+	Escribir "Dijite el valor de a: ";
+	Leer a;
+	Escribir "Dijite el valor de b: ";
+	Leer b;
+	
+	aux=a;
+	a=b;
+	b=aux;
+	
+	Escribir "El nuevo valor de a es: ",a;
+	Escribir "El nuevo valor de b es: ",b;
+FinFuncion
+
+Funcion vid_19_diagrma_de_flujo_ej_7() 
+	definir a,b,c,resultado como entero;
+	a = 10;
+	b = 20;
+	Escribir "digite un numero: ";
+	Leer c;
+	resultado=a+b+c;
+	Escribir "el resultado es: ",resultado;
+FinFuncion
+
+Funcion vid_20_diagrma_estructurado_ej_8() 
+	definir a,b,resultado como entero;
+	a = 10;
+	Escribir "Digite un numero: ";
+	Leer b;
+	resultado = a+b;
+	Escribir "El resultado es: ",resultado;
+FinFuncion
+
+Funcion vid_22_ejercicio1_ej_9()
+	Definir horas,min,seg Como Entero;
+	Definir hs, ms, total Como Entero;
+	
+	Escribir "digite las horas: ";
 	leer horas;
-	Escribir "Digite total de minutos: ";
-	leer minutos;
-	Escribir "digite total de segundos: ";
+	Escribir "digite los minutos ";
+	leer min;
+	Escribir "digite los segundos ";
 	leer seg;
-	
-	//Debe calcular el valor equivalente en segundos.
-	horas_seg <- horas * 3600;
-	minutos_seg <- minutos * 60;
-	
-	total_seg <- horas_seg + minutos_seg + seg;
-	
-	Escribir "Los segundos equivalentes son: ",total_seg;
+	hs=horas*3600;
+	ms=min;
+	total=hs+ms+seg;
+	Escribir "los segundos equivalentes son: ",total;
 FinFuncion
 
-
-
-Funcion ejercicio_5
+Funcion vid_23_ejercicio_2_ej_10()
+	Definir radio,area,lon Como Real;
+	Escribir  "digite el valo del radio: ";
 	
-	Definir radio,area,lon como real;
-	Escribir "Digite el valor del radio:";
-	// En este caso radio tomara el valor de (10)
-	Leer radio;
-	
-	area <- pi * radio^2;
-	lon <- 2 * pi * radio;
+	leer radio;
+	area=pi*radio^2;
+	lon=2*pi*radio;
 	
 	Escribir "El area de la circunferencia es: ",area;
-	Escribir "La longitud de la circunferencia es; ",lon;
-Finfuncion
+	Escribir "la longitud es: ",lon;
+FinFuncion
 
-
-
-Funcion ejercicio_6
+Funcion vid_24_ejercicio_3_ej_11()
 	
-	Definir num_hombres, num_mujeres como entero;
-	Definir total_estudiantes como entero;
-	Definir porcentajH, porcentajeM como real;
+	Definir num_hombres, num_mujeres Como Entero;
+	Definir total_studens Como Entero;
+	Definir porcentajeH , porcentajeM Como real;
 	
-	Escribir "Digite el numereo de hombres: ";
+	Escribir "Digite cantidad de hombres: ";
 	Leer num_hombres;
-	Escribir "Ingrese el numero de mujeres: ";
+	Escribir  "Digite cantidad de mujeres: ";
 	Leer num_mujeres;
+
+	total_studens <- num_hombres+ num_mujeres;
+	porcentajeH <- trunc(num_hombres / total_studens * 100);
+	porcentajeM <- trunc(num_mujeres / total_studens * 100);
 	
-	total_estudiantes <- num_hombres+num_mujeres;
-	porcentajeH <- num_hombres/total_estudiantes*100;
-	porcentajeM <- num_mujeres/total_estudiantes*100;
+	Escribir "El porcentaje de hombres es: ",porcentajeH,"%";
+	Escribir  "El porcentaje de  mujeres es: ", porcentajeM,"%";
 	
-	Escribir "El porcentaje de estudiantes hombres es: ",porcentajeH;
-	Escribir "El numero de estudiantes mujeres es: ",porcentajeM;
 FinFuncion
 
+Funcion  vid_25_ejercicio_4_ej_12()
+	
+	Definir a,b,c Como Entero;
+	Definir time_testa,time_testb,time_testc Como Entero;
+	Definir horas, minutos Como Entero; 
+	Definir Total_time Como Entero;
+	
+	
+	Escribir "Ingrese la cantidad de test A:";
+	Leer a;
+	Escribir  "Ingrese la cantidad de test b:";
+	Leer b;
+	Escribir "Infrese la cantidad de test c :";
+	Leer c;
 
+	time_testa <- a * 5 ;
+	time_testb <-b * 8;
+	time_testc <-c * 6;
+	
+	Total_time<- time_testa + time_testb + time_testc;
+	horas <- trunc(Total_time / 60);
+	minutos <- Total_time mod 60; 
+	
+	Escribir " Se tardara: ",horas," horas y ",minutos," minutos  " ;
+FinFuncion
+Funcion vid_26_ejercicio_5_ej_13()
+		
+		Definir Precio_inicial Como Entero;
+		Definir  Total_del_pago,descuento  Como Real;
+	
+		Escribir "Ingrese el precio" ;
+		Leer Precio_inicial;
 
-Funcion ejercicio_7
+		descuento <- Precio_inicial * 15 / 100;
+		Total_del_pago <- Precio_inicial - descuento;
 	
-	Definir cantidadA, cantidadB, cantidadC como enteros;
-	;
-	Definir tiempoA, tiempoB, tiempoC como enteros;
-	Definir tiempo_total como entero;
-	Definir horas, minutos como enteros;
-	
-	Escribir "Digite la cantidad de cuestionarios A: ";
-	leer cantidadA;
-	Escribir "Digite la cantidad de cuestionarios B: ";
-	leer cantidadB;
-	Escribir "Digite la cantidad de cuestionario C: ";
-	leer cantidadC;
-	
-	//CALCULAR LOS MINUTOS QUE TARDARA POR CUESTIONARIOS.
-	
-	tiempoA <- cantidadA * 5;
-	tiempoB <- cantidadB *8;
-	tiempoC <- cantidadC * 6;
-	
-	//Calculamos el tiempo total de las revisiones.
-	
-	tiempo_total <- tiempoA + tiempoB + tiempoC;
-	
-	//Hallamos las horas y minutos.
-	horas <- trunc(tiempo_total / 60);
-	minutos <- tiempo_total mod 60;
-	
-	Escribir "se tardara " ,horas,"hors y ",minutos," minutos";
+		Escribir "El total a pagar aplicando con decuento es :",Total_del_pago;
+		
 FinFuncion
 
-
-Funcion ejercicio_8
-	Definir precio, descuento, precio_final como real;
+Funcion  vid_27_ejercicio_6_ej_14()
+	Definir  c_examen, c_trabajo_f Como real;
+	Definir p1, p2 , p3,  Promedio_p  Como real;
+	Definir Promedio_tP,po_ex,po_tbjf Como Real;
+	Definir Promedio_total Como Real;
 	
-	Escribir "Digite el precio a cancelar: ";
-	Leer precio;
+	Escribir "Ingrese Nota del Primer Parcial: ";
+	Leer p1;
+	Escribir "Ingrese Nota del Segundo Parcial: ";
+	Leer p2;
+	Escribir "Ingrese Nota del Tercer Parcial: ";
+	Leer p3;
 	
-	descuento <- precio * 0.20;
-	// Puede ser o.20 o tambien precio * 20/100
-	precio_final <- precio - descuento ;
+	Promedio_p <- (p1 + p2 + p3) / 3 ;
 	
-	Escribir "El precio a cancelar es de: ",precio_final ;
+	Promedio_tP <- Promedio_p * 0.55;
+	
+	Escribir  "Ingrese nota del Examen final: ";
+	Leer  c_examen;
+	
+	po_ex <- c_examen * 0.3;
+	
+	Escribir  "ingrese nota del trabajo final: ";
+	Leer c_trabajo_f;
+	
+	po_tbjf <- c_trabajo_f * 0.15 ;
+	
+	Promedio_total<-  Promedio_tP + po_ex + po_tbjf;
+	
+	Escribir "El promedio del estudiante es: ", Promedio_total;
+	
+	
 FinFuncion
 
-
-
-Funcion ejercicio_9
+Funcion vid_29_ejercicio_1_ej_15() 	  
 	
-	Definir parcial1,parcial2,parcial3 como reales;
-	Definir promedioP, nota_promedio como reales;
-	Definir examen, examen_final como reales;
-	Definir trabajo, nota_trabajo como reales;
-	Definir nota_total como real; 
-	
-	Escribir "Ingrese la calificacion de los 3 parciales: ";
-	Leer parcial1, parcial2, parcial3;
-	//Calculamos el total de la nota de los 3 parciales
-	promedioP <- (parcial1+parcial2+parcial3)/3;
-	nota_promedio <- promedioP * 0.55;
-	
-	Escribir "Ingrese la calificacion del examen: ";
-	Leer examen;
-	//Hallamos el total de la nota del examen 
-	examen_final <- examen * 0.30;
-	
-	//Pasamos a la calificacion del trabajo
-	
-	Escribir "Ingres nota del trabajo: ";
-	Leer trabajo;
-	nota_trabajo <- trabajo * 0.15;
-	
-	//Hallamos el total de la calificacion
-	nota_total <- nota_promedio+examen_final+nota_trabajo;
-	
-	Escribir "Su calificacion es: ",nota_total;
-FinFuncion
-
-
-
-Funcion ejercicio_10
-	
-	Definir num como entero;
-	Escribir "Digite un numero: ";
-	leer num;
-	
-	Si num mod 2=0 entonces;
-		Escribir "El numero ", num , " es par";
-	Sino 
-		Escribir "El numero ", num ," es impar";
-	FinSi
-FinFuncion
-
-
-
-Funcion ejercicio_11
-	
-	Definir nota1,nota2,nota3 Como Real;
-	Definir promedio_parcial Como Real;
-	
-	Escribir 'Digite sus 3 calificaciones: ';
-	Leer nota1,nota2,nota3;
-	
-	// Hallamos el promedio de sus 3 calificaciones
-	promedio_parcial <- (nota1+nota2+nota3)/3;
-	
-	Si promedio_parcial >= 70 Entonces
-		Escribir "El estudiante aprueba con: ",promedio_parcial;
-	SiNo
-		Escribir "El estudiantes desaprueba con: ",promedio_parcial;
-	FinSi
-FinFuncion
-
-
-
-Funcion ejercicio_12
-	
-	Definir compra Como Real;
-	Definir descuento,precio_final Como Real;
-	
-	Escribir 'Ingrese el valor de la compra: ';
-	Leer compra;
-	
-	Si compra > 100 Entonces
-		descuento <- compra * 0.2;
-	SiNo
-		descuento <- 0;
-	FinSi
-	//Hallamos el precio y su descuento
-	precio_final <- compra-descuento;
-	
-	Escribir "El descuneto a pagar es: ",precio_final;
-FinFuncion
-
-
-
-Funcion ejercicio_13
-	
-	Definir num1,num2 como reales;
-	Definir resultado como real;
-	
-	Escribir "Ingrese dos numeros: ";
-	leer num1, num2;
-	
-	Si num1=num2 Entonces
-		//si son iguales multiplicamos.
-		resultado <- num1 * num2;
-	SiNo
-		si num1 > num2 Entonces
-			//si el primero es mayor restamos
-			resultado <- num1 - num2;
+	Definir num Como Entero;
+		
+		Escribir "Ingrese un numero :";
+		Leer num;
+		
+		si num mod 2 = 0 Entonces
+			Escribir " El numero: ",num," es par ";
 		SiNo
-			resultado <- num1+num2;
+			Escribir " El numero: " ,num," es impar ";
+			
 		FinSi
-	FinSi
-	Escribir "El resultado es: ",resultado;
+		
 FinFuncion
 
+Funcion vid_30_ejercicio_2_ej_16()
+		Definir  n1,n2,n3,pro Como reales;
+		
+		Escribir "Digite 3 calificaciones ";
+		Leer n1,n2,n3;
+		pro <- (n1 + n2 + n3) / 3;
+		
+		si pro >= 70 Entonces
+			Escribir "Felicidades has Aprovado con: ",pro ;
+		SiNo
+			Escribir "Reprovado esfuerzate mas: ", pro;
+		FinSi
+FinFuncion
 
+Funcion vid_31_ejercicio_3_ej_17() 
+		Definir V_SD,V_CD,T_AP Como Real;
+	
+		Escribir "Ingrese el precio Inicial: ";
+		Leer  V_SD;
 
-Funcion ejercicio_14
+		V_CD<- V_SD * 20 / 100;
+		
+		T_AP <- V_SD - v_cd;
 	
-	Definir num1,num2,num3 Como Real;
+		si V_SD > 100 Entonces
+			Escribir "El total a pagar es: ",T_AP;
+		SiNo
+			Escribir  "El total a pagar es: ",V_SD;
+		FinSi
+		
+FinFuncion
+Funcion vid_32_ejercicio_4_ej_18() 
+		Definir  num1, num2 Como Entero;
+		Definir rel Como Entero;
+		
+		Escribir "Digite el primer numero: ";
+		Leer num1;
+		Escribir  "Digitar el segundo numero: ";
+		Leer  num2;
+		si num1=num2 Entonces
+			rel <- num1 * num2; 
+		SiNo 
+			si num1>num2 Entonces
+				rel <- num1 - num2;
+			SiNo
+				rel <- num1+ num2;
+				
+			FinSi
+			
+		FinSi
+		Escribir "El resultado es : ",rel;
+FinFuncion
+Funcion vid_33_ejercicio_5_ej_19()
+	Definir num1,num2,num3 Como Entero;
 	
-	Escribir 'Ingrese 3 numeros: ';
+	Escribir " Digite 3 numeros: ";
 	Leer num1,num2,num3;
 	
-	Si num1>num2 Y num1>num3 Entonces
-		Escribir "El numero mayor es: ",num1;
-	SiNo
-		Si num2>num3 Y num2>num1 Entonces
-			Escribir "El numero mayor es: ",num2;
-		SiNo
-			Escribir "El numero mayor es: ",num3;
+	si num1 > num2 y num1 > num3 Entonces
+		Escribir "El mayor es: ", num1;
+	SiNo 
+		si num2 > num1 y num2 > num3 Entonces
+			
+			Escribir "El mayor es:", num2;
+		sino 
+			Escribir "El mayor es: ",num3 ;
+			
 		FinSi
 	FinSi
 FinFuncion
-
-
-
-Funcion ejercicio_15
-	Definir kilos,precio_kilos,precio_inicial como reales;
-	Definir descuento,precio_final como reales;
-	Escribir "Cuanto cuesta el kilo de manzanas: ";
-	Leer precio_kilos;
-	Escribir "Cuantos kilos de manzana compra: ";
-	Leer kilos;
-	precio_inicial <- precio_kilos*kilos;
-	Si kilos >0 Y kilos < 2 Entonces
-		descuento <- 0;
-	SiNo
-		Si kilos > 2.01 Y kilos < 5 Entonces
-			descuento <- precio_inicial*0.10;
+Funcion vid_34_ejercicio_6_ej_20()
+		Definir  Preciok,precioI,KilosM como real ;
+		Definir  Descuento, precio_final Como real ;
+		
+		Escribir "Definir precio de kilos :";
+		Leer Preciok ;
+		Escribir  "Introduzca los kilos: ";
+		Leer  KilosM ;
+		
+		precioI <- Preciok * KilosM;
+		
+		si KilosM >= 0 y KilosM <= 2 Entonces
+			Descuento <- 0;
 		SiNo
-			Si kilos > 5.01 Y kilos < 10 Entonces
-				dscuento <- precio_inicial*0.15;
+			si KilosM >= 2.01 y KilosM <= 5 Entonces
+				Descuento <- precioI * 0.1;
 			SiNo
-				descuento <- precio_inicial*0.20;
+				si KilosM >= 5.01 y KilosM <= 10 Entonces
+					Descuento <-  precioI * 0.15;
+				SiNo
+					Descuento <- precioI * 0.2;
+				FinSi
 			FinSi
-		FinSi
-	FinSi
-	precio_final <- precio_inicial*descuento;
-	Escribir "El valor a pagar es: ",precio_final;
+			
+		FinSi 
+		precio_final <- precioI - Descuento;
+		
+		Escribir "El valor a pagar es: ", precio_final," $" ;
+		
 FinFuncion
 
-
-Funcion ejercicio_16
+Funcion vid_35_ejercicio_7_ej_21()
 	
-	Definir num como entero;
-	Escribir "Digite un numero del dia de la semana(1-7): ";
-	leer num;
+	Definir num Como Entero;
 	
-	Segun num hacer 
-		1: Escribir "lunes";
+	Escribir "Digite un día de la semana (1/7) ";
+	Leer  num;
+	
+	Segun num Hacer
+		1: Escribir "Lunes";
 		2: Escribir "Martes";
 		3: Escribir "Miercoles";
 		4: Escribir "Jueves";
 		5: Escribir "Viernes";
-		6: EScribir "Sabado";
+		6: Escribir "Sabado";
 		7: Escribir "Domingo";
 		De Otro Modo:
-			Escribir "Error, el numero que ingreso no se registra";
+			Escribir "Error, no existe día para ese numero ";
+
 	FinSegun
+	
+FinFuncion 
+Funcion vid_36_ejercicio_8_ej_22()
+
+Definir dec Como Entero;
+
+Escribir "Digite una decada:";
+Leer dec;
+
+Segun dec Hacer
+	10: Escribir "Bodas de Hojalata";
+	20: Escribir "Bodas de Porcelana";
+	30: Escribir "Bodas de Perlas";
+	40: Escribir "Bodas de Rubí";
+	50: Escribir "Bodas de Oro";
+	60: Escribir "Bodas de Diamante";
+	De Otro Modo:
+		Escribir "La decada no existe";
+FinSegun
 FinFuncion
 
-
-
-Funcion ejercicio_17
-	Definir decada como entero;
-	Escribir "Digite una decada: ";
-	Leer decada;
-	Segun decada Hacer
-		10:
-			Escribir "Bodas de Porcelana";
-		20:
-			Escribir "Bodas de Porcelana";
-		30:
-			Escribir "Bodas de Perlas";
-		40:
-			Escribir "Bodas de Rubi";
-		50:
-			Escribir "Bodas de Oro";
-		60:
-			Escribir "Bodas de Diamante";
-		De Otro Modo:
-			Escribir "Error no existe decada para ese a�o";
-	FinSegun
-FinFuncion
-
-
-
-Funcion ejercicio_18
-	Definir opcion Como Entero;
-	Escribir 'Menu';
-	Escribir '1.Elevar un numero a una potencia x';
-	Escribir '2.Sacar la raiz cuadrada de un numero';
-	Escribir '3.Salir';
-	Escribir 'Digite una opcion: ';
-	Leer opcion;
-	Segun opcion Hacer
-		1:
-			Definir num,potencia,resultado Como Real;
-			Escribir 'Digite un numero: ';
-			Leer num;
-			Escribir 'Digite la potencia: ';
-			Leer potencia;
-			resultado <- num*potencia;
-			Escribir 'El resultado es: ',resultado;
-		2:
-			Definir num,raiz_cuadrada,resultado como reales;
+Funcion vid_37_ejercicio_9_ej_23()
+	Definir op Como Entero;
+	
+	Escribir "MENU";
+	Escribir "1. Elevar un numero a potencia X";
+	Escribir "2. Sacar la raiz cuadrada de un numero";
+	Escribir "3. Salir";
+	Escribir "Digite un opción: ";
+	Leer op;
+	Segun op Hacer
+		1:Definir num,pot,resultado como real;
 			Escribir "Digite un numero: ";
 			Leer num;
-			resultado <- rc(num);
+			Escribir "Digite una potencia";
+			Leer pot;
+			resultado<- num^pot;
 			Escribir "El resultado es: ",resultado;
-		3:
+	
+		2: Definir num , resultado como reales ;
+			Escribir "Digite un numero:";
+			Leer num;
+			Resultado<- rc(num);
+			Escribir "El resultado es: ",resultado;
+		3: Escribir "Usted a salido del menu, gracias por preferinos...";
+			
 		De Otro Modo:
-			Escribir "Error la opcion no existe";
+			Escribir "Se equivoco de menu ";
 	FinSegun
+	
 FinFuncion
-
-
-
-Funcion ejercicio_19
-	Definir i como entero;
+//Ciclos
+Funcion vid_40_ejercicio_1_ej_24()
+	Definir n,suma,i Como Entero;
 	
-	i <- 1;
-	
-	Repetir
-		Escribir i;
-		i <- i + 1;
-	Hasta Que  i>10;
-FinFuncion
-
-
-Funcion ejercicio_20
-	
-	Definir N, suma, i como entero;
-	Escribir "Ingrese los numeros a sumar: ";
-	leer N;
-	
+	Escribir  "Digite la cantidad de numeros a sumarse: ";
+	Leer n;
 	suma <- 0;
-	
-	Para i <- 1 Hasta N Con Paso 1 Hacer
+	para i<-1 Hasta n Hacer
 		suma <- suma + i;
 	FinPara
-	
 	Escribir "La suma es: ",suma;
 FinFuncion
 
-
-
-
-Funcion ejercicio_21
-	
-	Definir suma_pares, suma_impares, i como enteros;
-	suma_pares <- 0;
-	suma_impares <- 0;
-	// i = intirenador, amunetara de 1 en 1
-	// hasta el numero 49
-	Para i<-2 Hasta 49 Hacer
-		Si i mod 2 = 0 Entonces
-			suma_pares <- suma_pares + i;
+Funcion  vid_41_ejercicio_2_ej_25()
+	Definir sum_par,sum_impar,i Como Entero;
+	sum_par <- 0;
+	sum_impar <- 0;
+	Para i <- 2 hasta 49 Con Paso 1 Hacer
+		si i mod 2 = 0 Entonces
+			Sum_par <- sum_par + i;
 		SiNo
-			suma_impares <- suma_impares + i;
+			sum_impar <- sum_impar + i;
 		FinSi
 	FinPara
+	Escribir "La suma de pares es: ",sum_par;
+	Escribir  "La suma de impares es: ",sum_impar;
 	
-	Escribir "La suma de pares es: ",suma_pares;
-	Escribir "La suma de impares es: ",suma_impares;
-Finfuncion
+FinFuncion
 
-
-
-Funcion ejercicio_22
-	Definir num,i Como Entero;
-	Definir conteo_positivo,conteo_negativo,conteo_neutro Como Entero;
-	conteo_positivo <- 0;
-	conteo_negativo <- 0;
-	conteo_neutro <- 0;
-	Para i<-1 Hasta 10 Hacer
-		Escribir i,". Digite un numero: ";
+Funcion vid_42_ejercicio_3_ej_26()
+	
+	Definir num_neg,num_po,num_neu Como Enteros;
+	Definir  i, num Como Entero;
+	num_neg <- 0;
+	num_po <- 0 ;
+	num_neu <- 0;
+	
+	Para i<-1  Hasta 10 Con Paso 1 Hacer
+		Escribir i, ". Digite un Numero: ";
 		Leer num;
-		Si num = 0 Entonces
-			conteo_neutro <- conteo_neutro+1;
+		si num > 0 Entonces
+			num_po <- num_po + 1;
 		SiNo
-			Si num > 0 Entonces
-				conteo_positivo <- conteo_positivo+1;
+			si num = 0 Entonces
+				num_neu<- num_neu+1;
 			SiNo
-				conteo_negativo <- conteo_negativo+1;
+				num_neg<- num_neg + 1 ;
 			FinSi
 		FinSi
 	FinPara
-	Escribir "La cantidad positiva es: ",conteo_positivo;
-	Escribir "La cantidad negativa es: ",conteo_negativo;
-	Escribir "La cantidad neutra es: ",conteo_neutro;
+	Escribir "La cantidad de numeros positivos son: ",num_po;
+	Escribir  "La cantidad de numeros neutros son: ",num_neu;
+	Escribir  "La cantidad de numeros negativos son: ",num_neg;
 FinFuncion
 
-
-
-Funcion ejercicio_23
-	
-	Definir calificacion_promedio, calificacion_baja como real;
-	Definir calificacion, suma como real; 
-	Definir i como entero;
-	
+Funcion vid_43_ejercicio_4_ej_27()
+	Definir i, suma Como Entero;
+	Definir  ca_ba,cali Como Entero;
+	Definir  ca_pro Como Real;
 	suma <- 0;
-	calificacion_baja <- 99999;
+	ca_ba <- 99999;
 	
-	Para i <- 1 Hasta 10 Con Paso 1 Hacer
-		Escribir i,",Digite una calificacion: ";
-		leer calificacion;
+	Para i <- 1 hasta 10 Con Paso  1 hacer 
+		Escribir i,". Digite una calificación: ";
+		Leer cali;
 		
-		//suma iterativa de las calificaciones
-		suma <- suma + calificacion;
-		//calculamos la calificacio menor
-		si calificacion < calificacion_baja Entonces
-			calificacion_baja <- calificacion;
+		suma <- suma + cali;
+		
+		si cali<ca_ba Entonces
+			ca_ba <- cali;
 		FinSi
 	FinPara
+	ca_pro <- suma / 10;
+	Escribir "El promedio es :",ca_pro;
+	Escribir  "Y la calificaón mas baja es: ",ca_ba;
 	
-	calificacion_promedio <- suma/10;
-	
-	Escribir  "La calificacion promedio es: ",calificacion_promedio;
-	Escribir "La calificacion baja es: ",calificacion_baja;
 FinFuncion
 
-
-Funcion ejercicio_24
+Funcion vid_44_ejercicio_5_ej_28()
+	Definir i,factorial Como Entero;
 	Definir num Como Entero;
-	Definir i, factorial Como Entero;
-	Repetir
-		Escribir 'Digite un numero: ';
-		Leer num;
-	Hasta Que num >= 0
-	i <- 1;
-	factorial <- 1;
-	// N! = 1 * 2 * 3....*N
-	Mientras i <= num Hacer
+	Repetir 
+	Escribir  "Escriba un numero: ";
+	Leer num;
+	
+Hasta Que num>=0
+
+	i<-1 ;
+	Factorial <- 1;
+	Mientras i<=num Hacer
 		factorial <- factorial * i;
 		i <- i + 1;
 	FinMientras
-	Escribir "El factorial es: ", factorial;
+	Escribir "El factorial es: ",factorial;
+	
 FinFuncion
-
-
-Funcion ejercicio_25
+Funcion vid_45_ejercicio_6_ej_29()
+	Definir i, suma Como Entero;
+	Definir num, su_fac Como Entero;
 	
-	Definir n_elementos, i, num como enteros;
-	Definir suma_pares, conteo_pares como enteros;
-	Definir suma_impares, conteo_impares como enteros;
-	Definir promedio_impares como real;
+	i<-1;
+	suma <- 0;
+	Escribir  "Ingrese la cantidad de elementos: ";
+	Leer num;
 	
-	Escribir "Digite la cantidad de elementos a sumar: ";
-	Leer n_elementos;
-	
-	i <- 1;
-	suma_pares <- 0;
-	conteo_pares <- 0;
-	
-	suma_impares <- 0;
-	conteo_impares <- 0;
-	
-	Mientras i <= n_elementos Hacer
-		Escribir i," Digite un numero: ";
-		Leer num;
-		
-		si num mod 2 = 0 Entonces
-			//el numero es par 
-			
-			//suma iterativa de pares
-			suma_pares <- suma_pares + num;
-			
-			// Conteo de pares
-			conteo_pares <- conteo_pares + 1;
-		SiNo
-			// El numero es impar 
-			
-			// Suma iterativa de impares
-			suma_impares <- suma_impares + num;
-			
-			// Conteo de impares
-			conteo_impares <- conteo_impares + 1;
-		FinSi
-		
-		i <- i + 1;
+	Mientras i <= num Hacer
+		suma <- suma + i^2;
+		i<- i + 1;
 	FinMientras
-	
-	Si conteo_pares = 0 Entonces
-		Escribir "No se han digitado numeros pares";
-	SiNo
-		Escribir "La suma de los numeros pares es: ",suma_pares;
-		Escribir "El conteo de los numeros pares es: ",conteo_pares;
-	FinSi
-	
-	si conteo_impares = 0 Entonces
-		Escribir "No hay numeros impares";
-	SiNo
-		promedio_impares <- suma_impares/conteo_impares;
-		Escribir "El promedio de impares es: ", promedio_impares;
-	FinSi
+	Escribir "La suma de los cuadrados ",num," es: ",suma;
 FinFuncion
 
-
-
-Funcion ejercicio_26
+Funcion vid_46_ejercicio_7_ej_30()
+	Definir n_e , i, num2 Como Entero;
+	Definir cont_par, suma_par,suma_impar,cont_impar Como Entero;
+	Definir pro_impar Como Real;
+	Escribir  "Digite la cantidad de elementos a ingresar: ";
+	Leer n_e;
+	i<-1;
+	suma_par<- 0;
+	cont_par<- 0;
+	suma_impar <-0;
+	cont_impar <-0;
+	
+	Mientras i <= n_e Hacer
+		Escribir i,". Digite un numero:";
+		Leer num2;
+		
+		Si num2 mod 2 = 0 Entonces
+			suma_par <- suma_par + num2;                           
+			cont_par<- cont_par+1;
+		SiNo
+			suma_impar <- suma_impar + num2;
+			cont_impar <- cont_impar + 1;
+			
+		FinSi
+		i<- i + 1;
+	FinMientras
+	si cont_par = 0 Entonces
+		Escribir "No se han ingresado numeros pares: ";
+	SiNo
+		Escribir "La suma de los numeros pares es: ",suma_par;
+		Escribir  "El conteo de los numeros pares es: ",cont_par;
+	FinSi
+	si cont_impar = 0 Entonces
+		Escribir "No se an digitado numeros impares: ";
+	SiNo
+		pro_impar<- suma_impar / cont_impar ;
+		Escribir "El promerdio de impares es: ",pro_impar;
+	FinSi
+	
+FinFuncion
+Funcion ejercicio_31
 	Definir horas,num_horas,num_personas,tarifa Como Real;
 	Definir salario, salario_total Como Real;
-	num_personas <- 5;
+	
 	Repetir
 		// Buscamos la solucion de horas
 		Escribir 'Ingrese el numero de horas: ';
 		Leer num_horas;
 		Escribir "Ingrese el costo de horas: ";
 		Leer horas;
-	Hasta Que num_horas >= 0
+	Hasta Que num_horas <= 0
 	tarifa <- num_horas * horas;
 	salario <- tarifa;
 	salario_total <- salario/5;
@@ -592,32 +574,39 @@ FinFuncion
 
 
 
-Algoritmo ejercicios
-	//ejercicio_1;
-	//ejercicio_2;
-	//ejercicio_3;
-	//ejercicio_4;
-	//ejercicio_5;
-	//ejercicio_6;
-	//ejercicio_7;
-	//ejercicio_8;
-	//ejercicio_9;
-	//ejercicio_10;
-	//ejercicio_11;
-	//ejercicio_12;
-	//ejercicio_13;
-	//ejercicio_14;
-	//ejercicio_15;
-	//ejercicio_16;
-	//ejercicio_17;
-	//ejercicio_18;
-	//ejercicio_19;
-	//ejercicio_20;
-	//ejercicio_21;
-	//ejercicio_22;
-	//ejercicio_23;
-	//ejercicio_24;
-	//ejercicio_25;
-	//ejercicio_26;
-FinAlgoritmo
 
+Algoritmo tarea
+
+//vid_12_suma_ej_1();
+//vid_9_operadores_racionales_ej_2();
+//vid_14_operadoes_logicos_ej_3();
+//vid_16_operadores_aritmeticos_ej_4();
+//vid_17_operanes_ej_5();
+//vid_18_intercambio_de_valores_ej_6();
+//vid_19_diagrma_de_flujo_ej_7() ;
+//vid_20_diagrma_estructurado_ej_8() ;
+//vid_22_ejercicio1_ej_9();
+//vid_23_ejercicio_2_ej_10();
+//vid_24_ejercicio_3_ej_11();
+//vid_25_ejercicio_4_ej_12();
+//vid_26_ejercicio_5_ej_13();
+//vid_27_ejercicio_6_ej_14();
+//vid_29_ejercicio_1_ej_15(); 	
+//vid_30_ejercicio_2_ej_16();	
+//vid_31_ejercicio_3_ej_17();
+//vid_32_ejercicio_4_ej_18();
+//vid_33_ejercicio_5_ej_19();
+//vid_34_ejercicio_6_ej_20();
+//vid_35_ejercicio_7_ej_21();	
+//vid_36_ejercicio_8_ej_22();
+//vid_37_ejercicio_9_ej_23();
+//vid_40_ejercicio_1_ej_24();
+//vid_41_ejercicio_2_ej_25();
+//vid_42_ejercicio_3_ej_26();
+//vid_43_ejercicio_4_ej_27();
+//vid_44_ejercicio_5_ej_28();
+//vid_45_ejercicio_6_ej_29();
+//vid_46_ejercicio_7_ej_30();
+//ejercicio_31
+	
+FinAlgoritmo
